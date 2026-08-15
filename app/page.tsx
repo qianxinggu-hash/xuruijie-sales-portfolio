@@ -79,7 +79,13 @@ export default function Home() {
         </div>
         <div className="capability-grid">
           <article className="capability-main">
-            <span className="capability-index">核心能力</span>
+            <div className="capability-topline">
+              <span className="capability-index">核心能力</span>
+              <div className="capability-main-metric">
+                <strong>7</strong>
+                <span>个品牌项目</span>
+              </div>
+            </div>
             <h3>商业拓展</h3>
             <p>识别合作切口，理解客户目标，组织内部与外部资源，把模糊需求推进成可执行项目。</p>
             <div className="process" aria-label="商务推进流程">
@@ -90,10 +96,18 @@ export default function Home() {
             </div>
           </article>
           <article className="capability-side capability-activation">
+            <div className="capability-side-metrics" aria-label="活动主理成果">
+              <div><strong>3 类</strong><span>现场互动玩法</span></div>
+              <div><strong>4 篇</strong><span>活动 UGC 样本</span></div>
+            </div>
             <h3>活动主理</h3>
             <p>从校园场景、互动玩法到现场节奏，让品牌主张被真实体验。</p>
           </article>
           <article className="capability-side capability-content">
+            <div className="capability-side-metrics" aria-label="内容账号成果">
+              <div><strong>1万</strong><span>小红书粉丝</span></div>
+              <div><strong>1.6万</strong><span>获赞与收藏</span></div>
+            </div>
             <h3>内容转化</h3>
             <p>用平台语言表达产品卖点，让线下体验继续在线上扩散。</p>
           </article>
@@ -107,7 +121,20 @@ export default function Home() {
           <p>把一次校园赞助，做成可参与、可分享、可继续传播的品牌体验。</p>
         </div>
         <div className="case-visual section-shell">
-          <img src="/work/yogurt-team.jpg" alt="兰格格校园活动参与者合影" loading="lazy" />
+          <figure className="case-photo case-photo-main">
+            <img src="/work/hero-event.jpg" alt="兰格格草原酸奶节校园活动现场全景" loading="lazy" />
+            <figcaption>兰格格草原酸奶节活动现场</figcaption>
+          </figure>
+          <div className="case-photo-stack">
+            <figure className="case-photo">
+              <img src="/work/langgege-product.jpg" alt="兰格格草原酸奶节品牌主题与产品展示" loading="lazy" />
+              <figcaption>品牌主题与产品露出</figcaption>
+            </figure>
+            <figure className="case-photo case-photo-ugc">
+              <img src="/work/ugc-91f074.jpg" alt="兰格格校园活动小红书用户笔记样本" loading="lazy" />
+              <figcaption>现场体验形成用户内容</figcaption>
+            </figure>
+          </div>
           <div className="case-notes">
             <div>
               <span>场景</span>
